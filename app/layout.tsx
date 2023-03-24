@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import "../styles/globals.css";
+import PromptInput from "@/components/PromptInput";
 
 export const metadata = {
   title: "DALL-E 2.0 Image Generator",
@@ -15,8 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Header />
-        {/* Prompt Input */}
-        {/* Prompt Input */}
+        <PromptInput />
         {children}
       </body>
     </html>
