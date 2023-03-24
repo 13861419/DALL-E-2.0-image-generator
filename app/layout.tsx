@@ -1,4 +1,4 @@
-import "./globals.css";
+import "../styles/globals.css";
 
 export const metadata = {
   title: "DALL-E 2.0 Image Generator",
@@ -12,7 +12,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {/* Header */}
+        {/* Prompt Input */}
+        {/* Prompt Input */}
+        {children}
+      </body>
     </html>
   );
 }
