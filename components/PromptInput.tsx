@@ -15,6 +15,8 @@ function PromptInput() {
     revalidateOnFocus: false,
   });
 
+  console.log(suggestion);
+
   return (
     <div className="m-10">
       <form className="flex flex-col lg:flex-row shadow-md shadow-slate-400/10 border rounded-md lg:divide-x">
