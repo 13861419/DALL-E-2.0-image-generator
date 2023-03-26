@@ -17,7 +17,7 @@ function PromptInput() {
 
   const loading = isLoading || isValidating;
 
-  console.log(suggestion?.body);
+  console.log(suggestion);
 
   return (
     <div className="m-10">
@@ -27,7 +27,7 @@ function PromptInput() {
           onChange={(e) => setInput(e.target.value)}
           placeholder={
             (loading && "Thinking of a new suggestion...") ||
-            suggestion?.body ||
+            suggestion ||
             "Enter a prompt..."
           }
           className="flex-1 p-4 outline-none rounded-md"
@@ -63,7 +63,7 @@ function PromptInput() {
         <p className="italic pt-2 pl-2 font-light">
           Suggestion:{" "}
           <span className="text-violet-500">
-            {loading ? "Thinking new suggestion..." : suggestion?.body}
+            {loading ? "Thinking new suggestion..." : suggestion}
           </span>
         </p>
       )}

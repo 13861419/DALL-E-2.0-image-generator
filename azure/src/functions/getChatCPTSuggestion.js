@@ -1,7 +1,7 @@
 const { app } = require("@azure/functions");
 const openai = require("../../lib/openai");
 
-app.http("getChatGPTSuggestion", {
+app.http("getChatCPTSuggestion", {
   methods: ["GET"],
   authLevel: "anonymous",
   handler: async (request, context) => {
@@ -13,12 +13,12 @@ app.http("getChatGPTSuggestion", {
       temperature: 0.8,
     });
 
-    context.log(`Http function processed request for url "${request.url}"`);
+    context.log(
+      `hello Http function processed request for url "${request.url}"`
+    );
 
     const responseText = response.data.choices[0].text;
 
-    return {
-      body: responseText,
-    };
+    return { body: responseText };
   },
 });
