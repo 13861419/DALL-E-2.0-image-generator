@@ -38,7 +38,8 @@ function PromptInput() {
       ? suggestion
       : inputPrompt || (!isLoading && !isValidating && suggestion);
 
-    const res = await fetch("/api/generateImage", {
+    //call azure function from generateimages
+    const res = await fetch("/api/generateimage", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

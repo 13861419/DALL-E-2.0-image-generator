@@ -1,5 +1,6 @@
 const fetchImages = () =>
-  fetch("/api/getImages", {
+  //call azure function from getimages
+  fetch("/api/getimages", {
     cache: "no-store",
   }).then((res) => res.json());
 
