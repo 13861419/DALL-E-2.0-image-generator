@@ -10,21 +10,19 @@ const accountKey = process.env.accountKey;
 
 const containerName = "images";
 
-const SharedKeyCredential = new StorageSharedKeyCredential(
+const sharedKeyCredential = new StorageSharedKeyCredential(
   accountName,
   accountKey
 );
 
 const blobServiceClient = new BlobServiceClient(
   `https://${accountName}.blob.core.windows.net`,
-  SharedKeyCredential
+  sharedKeyCredential
 );
 
 async function generateSASToken() {
   const containerClient = blobServiceClient.getContainerClient(containerName);
-
   const permissions = new BlobSASPermissions();
-
   permissions.write = true;
   permissions.create = true;
   permissions.read = true;
@@ -38,7 +36,7 @@ async function generateSASToken() {
       permissions: permissions.toString(),
       expiresOn: expiryDate,
     },
-    SharedKeyCredential
+    sharedKeyCredential
   ).toString();
 
   return sasToken;
