@@ -4,7 +4,7 @@ export async function POST(request: Request) {
     const res = await request.json()
     const prompt = res.prompt;
 
-    const response = await fetch('https://ai-image-generator-next-js.azurewebsites.net/api/generateimage', {
+    const response = await fetch('https://ai-image-generator-next-js.azurewebsites.net/api/generateImage?', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
