@@ -1,8 +1,10 @@
 # AI Image Generator using OpenAI
 
-Goalie is a minimal goal management platform which enables users to create and manage goals. It includes community portal to share current and completed goals with other users.
+Ai Image Generator is a minimal Frontend to handle AI suggestions and image generation using OpenAI API and Microsoft Azure Web Services. 
 <br/>
-Main motive behind Goalie is to create a social accountability to help user complete goals without any procastinations.
+Main motive behind this project is to have a understand and learn workings of OpenAI API's and usage of Azure functions and Azure Storage.
+
+![DALL E-2 0-next js](https://user-images.githubusercontent.com/99337222/228240917-7cd3fcc3-a42a-4031-af9d-82af880658e9.png)
 
 <br/>
 
