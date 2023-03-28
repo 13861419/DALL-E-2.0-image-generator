@@ -19,7 +19,9 @@ function Images() {
     revalidateOnFocus: false,
   });
 
-  console.log(images);
+  const myLoader = (imageSrc: any) => {
+    return `${imageSrc}?w=800&q=75`;
+  };
 
   return (
     <div>
@@ -38,7 +40,7 @@ function Images() {
         </p>
       )}
 
-      <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 px-0 md:px-10">
+      <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 px-0 md:px-10 pb-10">
         {images?.imageUrls?.map((image: ImageType, i: number) => (
           <div
             className={`relative cursor-help ${
@@ -56,6 +58,7 @@ function Images() {
               </p>
             </div>
             <Image
+              loader={myLoader}
               src={image.url}
               alt=""
               unoptimized={true}
