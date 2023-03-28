@@ -19,6 +19,8 @@ function Images() {
     revalidateOnFocus: false,
   });
 
+  console.log(images);
+
   return (
     <div>
       <button
@@ -56,6 +58,7 @@ function Images() {
             <Image
               src={image.url}
               alt=""
+              unoptimized={true}
               height={800}
               width={800}
               className="w-full rounded-sm shadow-2xl drop-shadow-lg -z-10"
