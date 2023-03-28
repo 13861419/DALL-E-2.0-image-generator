@@ -42,8 +42,8 @@ I have used Next.js on client side to develop Frontend and make server side api 
 - [Microsoft Azure Web Services](https://azure.microsoft.com/en-us/)
 - [OpenAI](https://openai.com/)
 - [DALL-E 2.0](https://openai.com/product/dall-e-2)
-- [SWR]()
-- [TypeScript]()
+- [SWR](https://swr.vercel.app/)
+- [TypeScript](https://www.typescriptlang.org/)
 - [Axios](https://axios-http.com/docs/intro)
 - [Tailwind](https://tailwindcss.com/)
 
