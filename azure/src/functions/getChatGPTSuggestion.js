@@ -8,12 +8,12 @@ app.http("getChatGPTSuggestion", {
     const response = await openai.createCompletion({
       model: "text-davinci-003",
       prompt:
-        "Write a random text prompt for DALL·E to generate an image, this prompt will be shown to the user, include details such as the genre and what type of painting it should be, options can include: oil painting, watercolor, photo-realistic, 4k, abstract, modern, black and white etc. Do not wrap the answer in quotes.",
+        "给DALL·E写一个随机文本提示来生成图像，这个提示会显示给用户，包括流派和应该是什么类型的绘画等细节，选项可以包括：油画、水彩、照片写实, 4k, abstract, modern, black and white 等。不要用引号引起来",
       max_tokens: 100,
       temperature: 0.8,
     });
 
-    context.log(`Http function processed request for url "${request.url}"`);
+    context.log(`Http函数处理的url请求 "${request.url}"`);
 
     const responseText = response.data.choices[0].text;
 
