@@ -116,7 +116,7 @@ function PromptInput() {
 
       {input && (
         <p className="italic pt-2 pl-2 font-light">
-          Suggestion:{" "}
+          建议:{"请精准表述所要生成的图片"}
           <span className="text-violet-500">
             {loading ? "机器人正在思考中..." : suggestion}
           </span>

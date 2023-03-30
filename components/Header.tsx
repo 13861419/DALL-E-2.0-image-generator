@@ -1,7 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-
 function Header() {
   return (
     <header className="flex p-5 sticky top-0 bg-white z-50 shadow-md justify-between items-center">
