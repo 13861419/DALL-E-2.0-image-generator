@@ -95,7 +95,7 @@ function PromptInput() {
           type="submit"
           disabled={!input}
         >
-          Generate
+          生成
         </button>
         <button
           className={`p-4 bg-violet-400 text-white transition-colors duration-200 font-bold disabled:text-gray-300 disabled:cursor-not-allowed disabled:bg-gray-400`}
@@ -103,14 +103,14 @@ function PromptInput() {
           disabled={isLoading || isValidating}
           type="button"
         >
-          Use Suggestion
+          使用建议
         </button>
         <button
           className={`p-4 bg-white text-violet-500 border-none transition-colors duration-200 rounded-b-md md:rounded-r-md md:rounded-bl-none font-bold`}
           onClick={mutate}
           type="button"
         >
-          New Suggestion
+          新建议
         </button>
       </form>
 

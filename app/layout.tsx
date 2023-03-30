@@ -4,9 +4,9 @@ import PromptInput from "@/components/PromptInput";
 import ClientProvider from "@/components/clientProvider";
 
 export const metadata = {
-  title: "DALL·E 2.0 Image Generator - Ashirwad Shetye",
+  title: "DALL·E 2.0 图像生成器 - Ashirwad Shetye",
   description:
-    "Generated Images using DALL·E 2.0 and ChatGPT suggestion. Built with Next.js 13.2, DALL·E 2.0, and ChatGPT. This app is created by Ashirwad Shetye",
+    "使用 DALL·E 2.0 和 ChatGPT 建议生成图像。使用 Next.js 13.2、DALL·E 2.0 和 ChatGPT 构建。此应用程序由 Ashirwad Shetye 创建",
 };
 
 export default function RootLayout({
