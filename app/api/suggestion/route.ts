@@ -1,6 +1,6 @@
-export async function GET(request: Request) {
+/* export async function GET(request: Request) {
   const response = await fetch(
-    "https://ai-image-generator-next-js.azurewebsites.net/api/getChatGPTSuggestion?",
+ "https://ai-image-generator-next-js.azurewebsites.net/api/getChatGPTSuggestion?", 
     {
       cache: "no-store",
     }
@@ -11,3 +11,4 @@ export async function GET(request: Request) {
     status: 200,
   });
 }
+ */

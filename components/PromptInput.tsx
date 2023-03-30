@@ -31,7 +31,7 @@ function PromptInput() {
     const notificationPromptShort = notificationPrompt.slice(0, 20);
 
     const notification = toast.loading(
-      `DALL·E is creating: ${notificationPromptShort}...`
+      `图片创建中: ${notificationPromptShort}...`
     );
 
     const p = useSuggestion
@@ -54,7 +54,7 @@ function PromptInput() {
     if (data.error) {
       toast.error(data.error);
     } else {
-      toast.success(`Your AI Art has been Generated!`, {
+      toast.success(`您的AI艺术已经生成!`, {
         id: notification,
       });
     }
@@ -78,9 +78,9 @@ function PromptInput() {
       >
         <textarea
           placeholder={
-            (loading && "Thinking of a suggestion...") ||
+            (loading && "想一个建议...") ||
             suggestion ||
-            "Enter a prompt..."
+            "输入一个描述..."
           }
           value={input}
           onChange={(e) => setInput(e.target.value)}
@@ -118,7 +118,7 @@ function PromptInput() {
         <p className="italic pt-2 pl-2 font-light">
           Suggestion:{" "}
           <span className="text-violet-500">
-            {loading ? "ChatGPT is thinking..." : suggestion}
+            {loading ? "机器人正在思考中..." : suggestion}
           </span>
         </p>
       )}

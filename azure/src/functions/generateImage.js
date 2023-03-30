@@ -44,11 +44,11 @@ app.http("generateImage", {
 
     try {
       await blockBlobClient.uploadData(arrayBuffer);
-      console.log("File uploaded successfully!");
+      console.log("文件上传成功!");
     } catch (error) {
-      console.error("Error uploading file:", error.message);
+      console.error("加载文件错误:", error.message);
     }
 
-    return { body: "Successfully Uploaded Image" };
+    return { body: "图片上传成功" };
   },
 });

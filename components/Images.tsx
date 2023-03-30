@@ -30,13 +30,12 @@ function Images() {
       hover:bg-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-400 font-bold z-20"
         onClick={() => refreshImages(images)}
       >
-        {!isLoading && isValidating ? "Refreshing..." : "Refresh Images"}
+        {!isLoading && isValidating ? "刷新中..." : "刷新图片"}
       </button>
 
       {isLoading && (
         <p className="animate-pulse text-center pb-7 font-extralight">
-          Loading <span className="text-violet-400">AI</span> Generated
-          Images...
+          加载 <span className="text-violet-400">AI</span> 生成图片中...
         </p>
       )}
 
