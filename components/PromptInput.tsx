@@ -105,13 +105,13 @@ function PromptInput() {
         >
           使用建议
         </button>
-        <button
+        {/* <button
           className={`p-4 bg-white text-violet-500 border-none transition-colors duration-200 rounded-b-md md:rounded-r-md md:rounded-bl-none font-bold`}
           onClick={mutate}
           type="button"
         >
           新建议
-        </button>
+        </button> */}
       </form>
 
       {input && (
